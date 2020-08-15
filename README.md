@@ -48,6 +48,6 @@ python asset_change.py <your-file-path.blade.php> <common-asset-pattern>
 `frontend/css/style.css`, here you can find `frontend/` is common among your paths.
 * Press `Enter` or `Return` button to run the code.
 ***
-###Fix your code arrangement
+### Fix your code arrangement
 The downside here is that your `HTML` code will not be arranged with tabs and spaces, the solution for this issue is to
 use any online `HTML` formatter websites like the one in the this [link](https://www.freeformatter.com/html-formatter.html)

@@ -1,0 +1,9 @@
+## Get the path from the pattern
+        if re.search(r'"' + start_pattern + '(.*?)"', line):
+            path = re.search(r'"' + start_pattern + '(.*?)"', line).group(1)
+            ## Change the path to the desired pattern
+            change = re.sub(r'"' + start_pattern + '(.*?)"', line, '{{asset("' + path + '")}}')
+            ## Rewrite the whole file again
+            fp.write(line.replace(start_pattern + path, change))
+        else:
+            fp.write(line)
